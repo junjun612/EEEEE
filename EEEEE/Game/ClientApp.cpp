@@ -7,6 +7,8 @@
 
 #include "ClientApp.h"
 #include "Engine/Root.h"
+#include "Engine/Manager/ResourceManager.h"
+#include "Engine/Manager/RenderManager.h"
 
 ClientApp::ClientApp()
 {
@@ -39,6 +41,15 @@ bool ClientApp::Initialize_Engine(const Arguments& args)
     m_pRoot = Root::Get();
     m_pRoot->Construct(args);
  
+    ResourceConfig resourceConfig;
+    resourceConfig.contentPath = "../../Content/";
+    resourceConfig.configPath = "../../Config/";
+    m_pRoot->GetManager<ResourceManager>()->SetConfig(resourceConfig);
+    
+    RenderConfig renderConfig;
+    renderConfig.rendererType = ERendererType::RT_OPENGL;
+    m_pRoot->GetManager<RenderManager>()->SetConfig(renderConfig);
+    
     m_pRoot->Initialize();
     return true;
 }

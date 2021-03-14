@@ -11,6 +11,12 @@
 		602DDA2725FDF8FF00C3FA7F /* ClientApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA2525FDF8FF00C3FA7F /* ClientApp.cpp */; };
 		602DDA3825FDFDC400C3FA7F /* Root.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA3625FDFDC400C3FA7F /* Root.cpp */; };
 		602DDA4225FDFFD300C3FA7F /* BaseManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA4025FDFFD300C3FA7F /* BaseManager.cpp */; };
+		602DDA4925FE01E300C3FA7F /* RenderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA4725FE01E300C3FA7F /* RenderManager.cpp */; };
+		602DDA5625FE034400C3FA7F /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA5425FE034400C3FA7F /* ResourceManager.cpp */; };
+		602DDA5E25FE043F00C3FA7F /* BaseRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA5C25FE043F00C3FA7F /* BaseRenderer.cpp */; };
+		602DDA6325FE049700C3FA7F /* Renderer_OpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA6125FE049700C3FA7F /* Renderer_OpenGL.cpp */; };
+		602DDA6A25FE04FE00C3FA7F /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602DDA6825FE04FE00C3FA7F /* GLUT.framework */; };
+		602DDA6B25FE04FE00C3FA7F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602DDA6925FE04FE00C3FA7F /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +46,19 @@
 		602DDA3C25FDFEC800C3FA7F /* EngineConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EngineConfig.h; sourceTree = "<group>"; };
 		602DDA4025FDFFD300C3FA7F /* BaseManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BaseManager.cpp; sourceTree = "<group>"; };
 		602DDA4125FDFFD300C3FA7F /* BaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseManager.h; sourceTree = "<group>"; };
+		602DDA4725FE01E300C3FA7F /* RenderManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RenderManager.cpp; sourceTree = "<group>"; };
+		602DDA4825FE01E300C3FA7F /* RenderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenderManager.h; sourceTree = "<group>"; };
+		602DDA5125FE028000C3FA7F /* RenderConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenderConfig.h; sourceTree = "<group>"; };
+		602DDA5425FE034400C3FA7F /* ResourceManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
+		602DDA5525FE034400C3FA7F /* ResourceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResourceManager.h; sourceTree = "<group>"; };
+		602DDA5925FE037C00C3FA7F /* ResourceConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResourceConfig.h; sourceTree = "<group>"; };
+		602DDA5C25FE043F00C3FA7F /* BaseRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BaseRenderer.cpp; sourceTree = "<group>"; };
+		602DDA5D25FE043F00C3FA7F /* BaseRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRenderer.h; sourceTree = "<group>"; };
+		602DDA6125FE049700C3FA7F /* Renderer_OpenGL.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer_OpenGL.cpp; sourceTree = "<group>"; };
+		602DDA6225FE049700C3FA7F /* Renderer_OpenGL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderer_OpenGL.h; sourceTree = "<group>"; };
+		602DDA6625FE04CF00C3FA7F /* OpenGL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGL.h; sourceTree = "<group>"; };
+		602DDA6825FE04FE00C3FA7F /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		602DDA6925FE04FE00C3FA7F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				602DDA6A25FE04FE00C3FA7F /* GLUT.framework in Frameworks */,
+				602DDA6B25FE04FE00C3FA7F /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +79,7 @@
 			children = (
 				602DDA1925FDF7A800C3FA7F /* EEEEE */,
 				602DDA1825FDF7A800C3FA7F /* Products */,
+				602DDA6725FE04FE00C3FA7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +113,7 @@
 		602DDA2425FDF8E800C3FA7F /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				602DDA4D25FE021700C3FA7F /* Render */,
 				602DDA3E25FDFFB600C3FA7F /* Manager */,
 				602DDA3B25FDFEBD00C3FA7F /* Config */,
 				602DDA2925FDF97900C3FA7F /* Common */,
@@ -132,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				602DDA3C25FDFEC800C3FA7F /* EngineConfig.h */,
+				602DDA5125FE028000C3FA7F /* RenderConfig.h */,
+				602DDA5925FE037C00C3FA7F /* ResourceConfig.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -141,8 +166,41 @@
 			children = (
 				602DDA4025FDFFD300C3FA7F /* BaseManager.cpp */,
 				602DDA4125FDFFD300C3FA7F /* BaseManager.h */,
+				602DDA4725FE01E300C3FA7F /* RenderManager.cpp */,
+				602DDA4825FE01E300C3FA7F /* RenderManager.h */,
+				602DDA5425FE034400C3FA7F /* ResourceManager.cpp */,
+				602DDA5525FE034400C3FA7F /* ResourceManager.h */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		602DDA4D25FE021700C3FA7F /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA4F25FE025200C3FA7F /* Renderer_OpenGL */,
+				602DDA5C25FE043F00C3FA7F /* BaseRenderer.cpp */,
+				602DDA5D25FE043F00C3FA7F /* BaseRenderer.h */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		602DDA4F25FE025200C3FA7F /* Renderer_OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA6125FE049700C3FA7F /* Renderer_OpenGL.cpp */,
+				602DDA6225FE049700C3FA7F /* Renderer_OpenGL.h */,
+				602DDA6625FE04CF00C3FA7F /* OpenGL.h */,
+			);
+			path = Renderer_OpenGL;
+			sourceTree = "<group>";
+		};
+		602DDA6725FE04FE00C3FA7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA6825FE04FE00C3FA7F /* GLUT.framework */,
+				602DDA6925FE04FE00C3FA7F /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +262,11 @@
 				602DDA3825FDFDC400C3FA7F /* Root.cpp in Sources */,
 				602DDA2725FDF8FF00C3FA7F /* ClientApp.cpp in Sources */,
 				602DDA4225FDFFD300C3FA7F /* BaseManager.cpp in Sources */,
+				602DDA5E25FE043F00C3FA7F /* BaseRenderer.cpp in Sources */,
+				602DDA4925FE01E300C3FA7F /* RenderManager.cpp in Sources */,
 				602DDA1B25FDF7A800C3FA7F /* main.cpp in Sources */,
+				602DDA5625FE034400C3FA7F /* ResourceManager.cpp in Sources */,
+				602DDA6325FE049700C3FA7F /* Renderer_OpenGL.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

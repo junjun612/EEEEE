@@ -12,9 +12,16 @@
 
 struct EngineConfig
 {
-    std::string titleName = "EEEEE";
-    int windowWidth = 1280;
-    int windowHeight = 720;
+    EngineConfig()
+    {
+        titleName = "EEEEE";
+        windowWidth = 1280;
+        windowHeight = 720;
+    }
+    
+    std::string titleName;
+    int windowWidth;
+    int windowHeight;
 };
 
 #endif /* EngineConfig_h */

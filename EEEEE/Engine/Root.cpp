@@ -6,7 +6,8 @@
 //
 
 #include "Root.h"
-#include "Manager/BaseManager.h"
+#include "Manager/ResourceManager.h"
+#include "Manager/RenderManager.h"
 
 Root::Root()
 {
@@ -23,6 +24,10 @@ void Root::Construct(const Arguments& Args)
 {
     // Arguments 초기화
     m_Arguments = Args;
+    
+    // Manager 추가
+    AddManager<ResourceManager>();
+    AddManager<RenderManager>();
 }
 
 void Root::Initialize()
