@@ -5,10 +5,17 @@
 //  Created by 김민준 on 2021/03/14.
 //
 
-#include <iostream>
+#include "Game/ClientApp.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main(int argc, char * argv[])
+{
+    Arguments args;
+    args.argc = argc;
+    args.argv = argv;
+    
+    ClientApp app;
+    if (false == app.Initialize(args))
+        return -1;
+    
+    return app.Run();
 }

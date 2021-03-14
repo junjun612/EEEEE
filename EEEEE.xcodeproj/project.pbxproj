@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		602DDA1B25FDF7A800C3FA7F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA1A25FDF7A800C3FA7F /* main.cpp */; };
+		602DDA2725FDF8FF00C3FA7F /* ClientApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA2525FDF8FF00C3FA7F /* ClientApp.cpp */; };
+		602DDA3825FDFDC400C3FA7F /* Root.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA3625FDFDC400C3FA7F /* Root.cpp */; };
+		602DDA4225FDFFD300C3FA7F /* BaseManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA4025FDFFD300C3FA7F /* BaseManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,18 @@
 /* Begin PBXFileReference section */
 		602DDA1725FDF7A800C3FA7F /* EEEEE */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EEEEE; sourceTree = BUILT_PRODUCTS_DIR; };
 		602DDA1A25FDF7A800C3FA7F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		602DDA2525FDF8FF00C3FA7F /* ClientApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClientApp.cpp; sourceTree = "<group>"; };
+		602DDA2625FDF8FF00C3FA7F /* ClientApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientApp.h; sourceTree = "<group>"; };
+		602DDA2D25FDFA1C00C3FA7F /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		602DDA2E25FDFAF400C3FA7F /* Engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
+		602DDA3025FDFB0C00C3FA7F /* Assert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assert.h; sourceTree = "<group>"; };
+		602DDA3125FDFB2100C3FA7F /* Inline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Inline.h; sourceTree = "<group>"; };
+		602DDA3225FDFB4D00C3FA7F /* Arguments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arguments.h; sourceTree = "<group>"; };
+		602DDA3625FDFDC400C3FA7F /* Root.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Root.cpp; sourceTree = "<group>"; };
+		602DDA3725FDFDC400C3FA7F /* Root.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Root.h; sourceTree = "<group>"; };
+		602DDA3C25FDFEC800C3FA7F /* EngineConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EngineConfig.h; sourceTree = "<group>"; };
+		602DDA4025FDFFD300C3FA7F /* BaseManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BaseManager.cpp; sourceTree = "<group>"; };
+		602DDA4125FDFFD300C3FA7F /* BaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +72,77 @@
 		602DDA1925FDF7A800C3FA7F /* EEEEE */ = {
 			isa = PBXGroup;
 			children = (
+				602DDA2425FDF8E800C3FA7F /* Engine */,
+				602DDA2325FDF8DA00C3FA7F /* Game */,
 				602DDA1A25FDF7A800C3FA7F /* main.cpp */,
 			);
 			path = EEEEE;
+			sourceTree = "<group>";
+		};
+		602DDA2325FDF8DA00C3FA7F /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA2525FDF8FF00C3FA7F /* ClientApp.cpp */,
+				602DDA2625FDF8FF00C3FA7F /* ClientApp.h */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		602DDA2425FDF8E800C3FA7F /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA3E25FDFFB600C3FA7F /* Manager */,
+				602DDA3B25FDFEBD00C3FA7F /* Config */,
+				602DDA2925FDF97900C3FA7F /* Common */,
+				602DDA3625FDFDC400C3FA7F /* Root.cpp */,
+				602DDA3725FDFDC400C3FA7F /* Root.h */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		602DDA2925FDF97900C3FA7F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA2F25FDFAFE00C3FA7F /* Misc */,
+				602DDA2C25FDFA0700C3FA7F /* Pattern */,
+				602DDA2E25FDFAF400C3FA7F /* Engine.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		602DDA2C25FDFA0700C3FA7F /* Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA2D25FDFA1C00C3FA7F /* Singleton.h */,
+			);
+			path = Pattern;
+			sourceTree = "<group>";
+		};
+		602DDA2F25FDFAFE00C3FA7F /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA3025FDFB0C00C3FA7F /* Assert.h */,
+				602DDA3125FDFB2100C3FA7F /* Inline.h */,
+				602DDA3225FDFB4D00C3FA7F /* Arguments.h */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		602DDA3B25FDFEBD00C3FA7F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA3C25FDFEC800C3FA7F /* EngineConfig.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		602DDA3E25FDFFB600C3FA7F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA4025FDFFD300C3FA7F /* BaseManager.cpp */,
+				602DDA4125FDFFD300C3FA7F /* BaseManager.h */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +201,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				602DDA3825FDFDC400C3FA7F /* Root.cpp in Sources */,
+				602DDA2725FDF8FF00C3FA7F /* ClientApp.cpp in Sources */,
+				602DDA4225FDFFD300C3FA7F /* BaseManager.cpp in Sources */,
 				602DDA1B25FDF7A800C3FA7F /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = ./EEEEE/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = ./EEEEE/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
