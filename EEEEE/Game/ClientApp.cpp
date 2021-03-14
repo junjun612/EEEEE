@@ -10,9 +10,14 @@
 #include "Engine/Manager/ResourceManager.h"
 #include "Engine/Manager/RenderManager.h"
 
+#include "Engine/Game/World/World.h"
+#include "Engine/Actor/Actor.h"
+#include "Engine/Resource/StaticMesh.h"
+
 ClientApp::ClientApp()
 {
     m_pRoot = nullptr;
+    m_bShouldQuit = false;
 }
 
 ClientApp::~ClientApp()
@@ -33,6 +38,12 @@ bool ClientApp::Initialize(const Arguments& args)
 
 bool ClientApp::Run()
 {
+    while (false == m_bShouldQuit)
+    {
+        if (false == m_pRoot->Tick())
+            return false;
+    }
+    
     return true;
 }
 
@@ -56,5 +67,22 @@ bool ClientApp::Initialize_Engine(const Arguments& args)
 
 bool ClientApp::Initialize_Game(const Arguments& args)
 {
+    // 테스트용 메쉬
+    Vertex v1;
+    v1.location = Vector(0.0f, 1.0f, 0.0f);
+    
+    Vertex v2;
+    v2.location = Vector(1.0f, -1.0f, 0.0f);
+    
+    Vertex v3;
+    v3.location = Vector(-1.0f, -1.0f, 0.0f);
+    
+    StaticMesh* pMesh = new StaticMesh();
+    pMesh->SetVertexList({ v1, v2, v3 });
+    
+    // 추가
+    Actor* pActor = new Actor();
+    m_pRoot->GetWorld()->AddActor(pActor);
+    
     return true;
 }

@@ -43,3 +43,8 @@ bool RenderManager::Initialize()
     
     return true;
 }
+
+BaseRenderer* RenderManager::GetRenderer() const
+{
+    return m_pRenderer;
+}

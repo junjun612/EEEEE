@@ -11,8 +11,11 @@
 #include "Misc/Inline.h"
 #include "Misc/Assert.h"
 #include "Misc/Arguments.h"
+#include "Math/Vector.h"
+#include "Math/Transform.h"
 
 #include <vector>
+#include <queue>
 #include <string>
 #include <cmath>
 

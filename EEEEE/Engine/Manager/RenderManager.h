@@ -18,9 +18,10 @@ public:
     RenderManager();
     ~RenderManager();
     
+    virtual void SetConfig(const RenderConfig& config);
     virtual bool Initialize() override;
     
-    void SetConfig(const RenderConfig& config);
+    BaseRenderer* GetRenderer() const;
     
 private:
     RenderConfig m_RenderConfig;

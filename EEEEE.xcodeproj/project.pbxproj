@@ -17,6 +17,16 @@
 		602DDA6325FE049700C3FA7F /* Renderer_OpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA6125FE049700C3FA7F /* Renderer_OpenGL.cpp */; };
 		602DDA6A25FE04FE00C3FA7F /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602DDA6825FE04FE00C3FA7F /* GLUT.framework */; };
 		602DDA6B25FE04FE00C3FA7F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602DDA6925FE04FE00C3FA7F /* OpenGL.framework */; };
+		602DDA7125FE091600C3FA7F /* Resource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA7025FE091600C3FA7F /* Resource.cpp */; };
+		602DDA7625FE09A600C3FA7F /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA7425FE09A600C3FA7F /* Vector.cpp */; };
+		602DDA7B25FE0ACB00C3FA7F /* StaticMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA7A25FE0ACB00C3FA7F /* StaticMesh.cpp */; };
+		602DDA8225FE0EDB00C3FA7F /* ActorComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA8025FE0EDB00C3FA7F /* ActorComponent.cpp */; };
+		602DDA8925FE0F6F00C3FA7F /* SceneComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA8725FE0F6F00C3FA7F /* SceneComponent.cpp */; };
+		602DDA8D25FE0FB600C3FA7F /* Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA8B25FE0FB600C3FA7F /* Transform.cpp */; };
+		602DDA9225FE11BE00C3FA7F /* PrimitiveComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA9025FE11BE00C3FA7F /* PrimitiveComponent.cpp */; };
+		602DDA9825FE122E00C3FA7F /* Actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA9625FE122E00C3FA7F /* Actor.cpp */; };
+		602DDAA025FE137B00C3FA7F /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDA9E25FE137B00C3FA7F /* World.cpp */; };
+		602DDAA625FE1C6D00C3FA7F /* StaticMeshComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602DDAA425FE1C6D00C3FA7F /* StaticMeshComponent.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +69,26 @@
 		602DDA6625FE04CF00C3FA7F /* OpenGL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGL.h; sourceTree = "<group>"; };
 		602DDA6825FE04FE00C3FA7F /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		602DDA6925FE04FE00C3FA7F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		602DDA6E25FE08C700C3FA7F /* StaticMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticMesh.h; sourceTree = "<group>"; };
+		602DDA6F25FE08E700C3FA7F /* Resource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
+		602DDA7025FE091600C3FA7F /* Resource.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Resource.cpp; sourceTree = "<group>"; };
+		602DDA7425FE09A600C3FA7F /* Vector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vector.cpp; sourceTree = "<group>"; };
+		602DDA7525FE09A600C3FA7F /* Vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		602DDA7A25FE0ACB00C3FA7F /* StaticMesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StaticMesh.cpp; sourceTree = "<group>"; };
+		602DDA8025FE0EDB00C3FA7F /* ActorComponent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ActorComponent.cpp; sourceTree = "<group>"; };
+		602DDA8125FE0EDB00C3FA7F /* ActorComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActorComponent.h; sourceTree = "<group>"; };
+		602DDA8725FE0F6F00C3FA7F /* SceneComponent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneComponent.cpp; sourceTree = "<group>"; };
+		602DDA8825FE0F6F00C3FA7F /* SceneComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneComponent.h; sourceTree = "<group>"; };
+		602DDA8B25FE0FB600C3FA7F /* Transform.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Transform.cpp; sourceTree = "<group>"; };
+		602DDA8C25FE0FB600C3FA7F /* Transform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transform.h; sourceTree = "<group>"; };
+		602DDA9025FE11BE00C3FA7F /* PrimitiveComponent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PrimitiveComponent.cpp; sourceTree = "<group>"; };
+		602DDA9125FE11BE00C3FA7F /* PrimitiveComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrimitiveComponent.h; sourceTree = "<group>"; };
+		602DDA9625FE122E00C3FA7F /* Actor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Actor.cpp; sourceTree = "<group>"; };
+		602DDA9725FE122E00C3FA7F /* Actor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Actor.h; sourceTree = "<group>"; };
+		602DDA9E25FE137B00C3FA7F /* World.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
+		602DDA9F25FE137B00C3FA7F /* World.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
+		602DDAA425FE1C6D00C3FA7F /* StaticMeshComponent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StaticMeshComponent.cpp; sourceTree = "<group>"; };
+		602DDAA525FE1C6D00C3FA7F /* StaticMeshComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticMeshComponent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +143,11 @@
 		602DDA2425FDF8E800C3FA7F /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				602DDA9C25FE136B00C3FA7F /* Game */,
+				602DDA7F25FE0EBA00C3FA7F /* Component */,
+				602DDA7E25FE0EB400C3FA7F /* Actor */,
 				602DDA4D25FE021700C3FA7F /* Render */,
+				602DDA6D25FE08B300C3FA7F /* Resource */,
 				602DDA3E25FDFFB600C3FA7F /* Manager */,
 				602DDA3B25FDFEBD00C3FA7F /* Config */,
 				602DDA2925FDF97900C3FA7F /* Common */,
@@ -126,6 +160,7 @@
 		602DDA2925FDF97900C3FA7F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				602DDA7325FE098900C3FA7F /* Math */,
 				602DDA2F25FDFAFE00C3FA7F /* Misc */,
 				602DDA2C25FDFA0700C3FA7F /* Pattern */,
 				602DDA2E25FDFAF400C3FA7F /* Engine.h */,
@@ -203,6 +238,69 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		602DDA6D25FE08B300C3FA7F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA6E25FE08C700C3FA7F /* StaticMesh.h */,
+				602DDA7A25FE0ACB00C3FA7F /* StaticMesh.cpp */,
+				602DDA6F25FE08E700C3FA7F /* Resource.h */,
+				602DDA7025FE091600C3FA7F /* Resource.cpp */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		602DDA7325FE098900C3FA7F /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA7425FE09A600C3FA7F /* Vector.cpp */,
+				602DDA7525FE09A600C3FA7F /* Vector.h */,
+				602DDA8B25FE0FB600C3FA7F /* Transform.cpp */,
+				602DDA8C25FE0FB600C3FA7F /* Transform.h */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		602DDA7E25FE0EB400C3FA7F /* Actor */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA9625FE122E00C3FA7F /* Actor.cpp */,
+				602DDA9725FE122E00C3FA7F /* Actor.h */,
+			);
+			path = Actor;
+			sourceTree = "<group>";
+		};
+		602DDA7F25FE0EBA00C3FA7F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA8025FE0EDB00C3FA7F /* ActorComponent.cpp */,
+				602DDA8125FE0EDB00C3FA7F /* ActorComponent.h */,
+				602DDA8725FE0F6F00C3FA7F /* SceneComponent.cpp */,
+				602DDA8825FE0F6F00C3FA7F /* SceneComponent.h */,
+				602DDA9025FE11BE00C3FA7F /* PrimitiveComponent.cpp */,
+				602DDA9125FE11BE00C3FA7F /* PrimitiveComponent.h */,
+				602DDAA425FE1C6D00C3FA7F /* StaticMeshComponent.cpp */,
+				602DDAA525FE1C6D00C3FA7F /* StaticMeshComponent.h */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		602DDA9C25FE136B00C3FA7F /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA9D25FE137300C3FA7F /* World */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		602DDA9D25FE137300C3FA7F /* World */ = {
+			isa = PBXGroup;
+			children = (
+				602DDA9E25FE137B00C3FA7F /* World.cpp */,
+				602DDA9F25FE137B00C3FA7F /* World.h */,
+			);
+			path = World;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -259,14 +357,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				602DDA8D25FE0FB600C3FA7F /* Transform.cpp in Sources */,
+				602DDA9225FE11BE00C3FA7F /* PrimitiveComponent.cpp in Sources */,
 				602DDA3825FDFDC400C3FA7F /* Root.cpp in Sources */,
+				602DDA9825FE122E00C3FA7F /* Actor.cpp in Sources */,
 				602DDA2725FDF8FF00C3FA7F /* ClientApp.cpp in Sources */,
+				602DDA7625FE09A600C3FA7F /* Vector.cpp in Sources */,
+				602DDA8225FE0EDB00C3FA7F /* ActorComponent.cpp in Sources */,
+				602DDA7125FE091600C3FA7F /* Resource.cpp in Sources */,
+				602DDA8925FE0F6F00C3FA7F /* SceneComponent.cpp in Sources */,
 				602DDA4225FDFFD300C3FA7F /* BaseManager.cpp in Sources */,
+				602DDA7B25FE0ACB00C3FA7F /* StaticMesh.cpp in Sources */,
 				602DDA5E25FE043F00C3FA7F /* BaseRenderer.cpp in Sources */,
 				602DDA4925FE01E300C3FA7F /* RenderManager.cpp in Sources */,
 				602DDA1B25FDF7A800C3FA7F /* main.cpp in Sources */,
 				602DDA5625FE034400C3FA7F /* ResourceManager.cpp in Sources */,
 				602DDA6325FE049700C3FA7F /* Renderer_OpenGL.cpp in Sources */,
+				602DDAA625FE1C6D00C3FA7F /* StaticMeshComponent.cpp in Sources */,
+				602DDAA025FE137B00C3FA7F /* World.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

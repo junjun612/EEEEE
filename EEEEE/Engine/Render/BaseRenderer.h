@@ -8,7 +8,9 @@
 #ifndef BaseRenderer_h
 #define BaseRenderer_h
 
-#include "Engine.h"
+#include "Engine/Common/Engine.h"
+
+class PrimitiveComponent;
 
 class BaseRenderer
 {
@@ -19,6 +21,12 @@ public:
     virtual bool Initialize();
     virtual void End();
     virtual void RenderFrame();
+    
+protected:
+    void CollectRenderable();
+    
+private:
+    std::queue <PrimitiveComponent*> m_RenderableList;
 };
 
 #endif /* BaseRenderer_hpp */

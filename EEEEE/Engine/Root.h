@@ -13,6 +13,7 @@
 #include "Config/EngineConfig.h"
 
 class BaseManager;
+class World;
 
 class Root : public TSingleton<Root>
 {
@@ -22,6 +23,7 @@ public:
     
     void Construct(const Arguments& Args);
     void Initialize();
+    bool Tick();
     
     const Arguments& GetArguments() const;
     const EngineConfig& GetConfig() const;
@@ -31,13 +33,17 @@ public:
     void AddManager();
     
     template <typename T>
-    T* GetManager();
+    T* GetManager() const;
+    
+    // World
+    World* GetWorld() const;
     
 private:
-    std::vector<BaseManager*> m_ManagerList;
-    
     Arguments m_Arguments;
     EngineConfig m_Config;
+    
+    std::vector<BaseManager*> m_ManagerList;
+    World* m_pWorld;
 };
 
 template <typename T>
@@ -47,7 +53,7 @@ void Root::AddManager()
 }
 
 template <typename T>
-T* Root::GetManager()
+T* Root::GetManager() const
 {
     for (BaseManager* pManager : m_ManagerList)
     {

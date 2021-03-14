@@ -27,6 +27,7 @@ protected:
     
 private:
     Root* m_pRoot;
+    bool m_bShouldQuit;
 };
 
 #endif /* ClientApp_hpp */

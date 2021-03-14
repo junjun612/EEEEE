@@ -17,7 +17,7 @@ public:
     ResourceManager();
     ~ResourceManager();
     
-    void SetConfig(const ResourceConfig& newConfig);
+    virtual void SetConfig(const ResourceConfig& newConfig);
     
 private:
     ResourceConfig m_ResourceConfig;
